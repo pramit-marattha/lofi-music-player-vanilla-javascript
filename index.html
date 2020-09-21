@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=4, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <title>Lofi music player</title>
+</head>
+<body>
+
+    
+
+    <div class="bottomApp">
+            <div class="weirdShape"></div>  
+        <div class="player">
+            <div class="container">
+               
+                <div class="icons">
+                    <h1>Lofi Music Player</h1>
+                </div>
+                <!-- Artwork Images -->
+                <div class="img">
+                    <img src="./songs_images/$orries_Cover (front)_e.jpg" alt="$orries">
+                </div>
+            </div>
+            
+            <div class="audio-buttons">
+                <div class="play-buttons">
+                    <a href="#" onclick="loadPreviousSong()"><i class="fa fa-backward" ></i></a>
+                    <a href="#" class="play-and-pause" onclick="playAndPauseButton()"><i class="fa fa-play" ></i></a>
+                    <a href="#" onclick="loadNextSong()"><i class="fa fa-forward" ></i></a>
+                </div>
+                <div class="repeat-buttons">
+                    <span>
+                        <button class="decrese-volume-buttons" onclick="decreaseVolume()">-</button>
+                        <a href="#" class="volume-up"><i class="fa fa-volume-up"></i></a>
+                        <button class="increse-volume-buttons" onclick="increaseVolume()">+</button>
+                    </span>
+                </div>
+            </div>
+            
+        </div>
+    
+<!-- ---------------------------------------------------Playable Instruments------------------------------------------------------------------------------------- -->
+
+
+    <div class="visual"></div>
+        <div class="instrumentButton">
+        <div class="button_0">
+            <p>Kicks</p>
+        <audio
+            class="sound"
+            type="audio/wav"
+            src="./sounds/drums/Kicks/Cymatics - Lofi Kick 1 - C.wav"
+        ></audio>
+        </div>
+        <div class="button_1">
+            <p>Claps</p>
+        <audio
+            class="sound"
+            type="audio/wav"
+            src="./sounds/drums/Claps/Cymatics - Lofi Clap 1.wav"
+        ></audio>
+        </div>
+        <div class="button_2">
+            <p>Percussion</p>
+        <audio
+            class="sound"
+            type="audio/wav"
+            src="./sounds/drums/Percussion/Cymatics - Lofi Percussion 1.wav"
+        ></audio>
+        </div>
+        <div class="button_3">
+            <p>Squash</p>
+        <audio
+            class="sound"
+            type="audio/wav"
+            src="./sounds/drums/Percussion/Cymatics - Lofi Percussion 3.wav"
+        ></audio>
+        </div>
+        <div class="button_4">
+            <p>Snares</p>
+        <audio
+            class="sound"
+            type="audio/wav"
+            src="./sounds/drums/Snares/Cymatics - Lofi Snare 10 - A.wav"
+        ></audio>
+        </div>
+        <div class="button_5">
+            <p>Melody</p>
+        <audio
+            class="sound"
+            type="audio/wav"
+            src="./sounds/melody/Cymatics - Lofi Melody Loop 1 - 70 BPM G Maj.wav"
+        ></audio>
+        </div>
+        <div class="button_6">
+            <p>Melody-2</p>
+        <audio
+            class="sound"
+            type="audio/wav"
+            src="./sounds/melody/Cymatics - Lofi Melody Loop 2 - 75 BPM G Maj.wav"
+        ></audio>
+        </div>
+        <div class="button_7">
+            <p>Melody-3</p>
+            <audio
+                class="sound"
+                type="audio/wav"
+                src="./sounds/melody/Cymatics - Lofi Melody Loop 4 - 80 BPM E Min.wav"
+            ></audio>
+        </div>
+        <div class="button_8">
+            <p>Melody-4</p>
+            <audio
+                class="sound"
+                type="audio/wav"
+                src="./sounds/melody/Cymatics - Lofi Melody Loop 5 - 80 BPM F Min.wav"
+            ></audio>
+        </div>
+        <div class="button_9">
+            <p>Melody-5</p>
+            <audio
+                class="sound"
+                type="audio/wav"
+                src="./sounds/melody/Cymatics - Lofi Melody Loop 25 - 130 BPM B Min.wav"
+            ></audio>
+        </div>
+        <div class="button_10">
+            <p>Melody-6</p>
+            <audio
+                class="sound"
+                type="audio/wav"
+                src="./sounds/melody/Cymatics - Lofi Melody Loop 19 - 130 BPM D Min.wav"
+            ></audio>
+        </div>
+        <div class="button_11">
+            <p>Ticks</p>
+            <audio
+                class="sound"
+                type="audio/wav"
+                src="./sounds/drums/Cymbals/Closed Hihats/Cymatics - Lofi Closed Hihat 4.wav"
+            ></audio>
+        </div>
+        <div class="button_12">
+            <p>woosh</p>
+            <audio
+                class="sound"
+                type="audio/wav"
+                src="./sounds/drums/Cymbals/Closed Hihats/Cymatics - Lofi Closed Hihat 5.wav"
+            ></audio>
+        </div>
+        <div class="button_13">
+            <p>Rides</p>
+            <audio
+                class="sound"
+                type="audio/wav"
+                src="./sounds/drums/Cymbals/Rides/Cymatics - Lofi Ride 1.wav"
+            ></audio>
+        </div>
+        <div class="button_14">
+                <p>Rides-2</p>
+            <audio
+                class="sound"
+                type="audio/wav"
+                src="./sounds/drums/Cymbals/Rides/Cymatics - Lofi Ride 2.wav"
+            ></audio>
+        </div>
+        <div class="button_15" onClick="window.location.reload();">
+            <p>⚠️ Reset</p>      
+        </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #7f5a83;
+  background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+}
+
+img {
+  max-width: 100%;
+}
+
+.player {
+  /* background-color: #fe7bb0; */
+  background-color: rgba(226, 102, 181, 0.9);
+  background-image: linear-gradient(315deg, #fe7bb0 0%, #ff748b 74%);
+  width: 360px;
+  height: 495px;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #c4125c;
+  text-shadow: 2px 2px #510202;
+  border-radius: 40px;
+  box-shadow: 0 20px 50px rgba(226, 102, 181, 0.9);
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.conatiner {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.img {
+  background-color: #fc5296;
+  background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%);
+  width: 60%;
+  border-radius: 30%;
+  margin: 30px auto;
+  transition: all 0.3s;
+}
+
+.img img {
+  border-radius: 30%;
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons:hover {
+  color: #fff;
+}
+
+.img:hover {
+  background-color: #f9d1b7;
+  background-image: linear-gradient(315deg, #f9d1b7 0%, #f894a4 74%);
+  box-shadow: 5px 5px rgba(98, 0, 41, 0.4), 10px 10px rgba(98, 0, 57, 0.3),
+    15px 15px rgba(98, 0, 57, 0.2), 20px 20px rgba(98, 0, 69, 0.1),
+    25px 25px rgba(98, 0, 33, 0.05);
+  transform: scale(1.2);
+}
+
+.audio-buttons {
+  /* background: rgb(240, 240, 240); */
+  margin: 20px auto;
+  height: 250px;
+  width: 100%;
+  border-radius: 20%;
+  text-align: center;
+}
+
+.audio-buttons a:hover {
+  color: rgb(213, 206, 206);
+}
+
+.play-buttons {
+  padding: 25px 0 40px 0;
+}
+
+.play-buttons a {
+  color: #fff;
+  margin: 0 30px;
+  font-size: 1.5em;
+  transition: all 0.5;
+}
+
+.play-buttons .play-and-pause {
+  background: #ff0683;
+  padding: 20px 20px 20px 23px;
+  border-radius: 50%;
+  box-shadow: 0 20px 50px rgba(157, 9, 88, 0.7);
+  /* box-shadow: 0px 10px 1px #ddd, 0 10px 20px #ccc; */
+}
+
+.repeat-buttons {
+  margin: 20px 0;
+}
+
+.repeat-buttons a {
+  color: #fff;
+  margin: 0 25px;
+  font-size: 1.2em;
+}
+
+.repeat-buttons button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: rgba(9, 95, 157, 0.7);
+  border-radius: 30%;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 20px 50px rgba(226, 147, 197, 0.802);
+  transition: all 0.3s;
+}
+
+.repeat-buttons button:hover {
+  background: #ff0697;
+  color: #fff;
+}
+
+/* --------------------------------------Instrument----------------------------------- */
+.bottomApp {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.instrumentButton {
+  width: 100%;
+  display: flex;
+}
+
+.instrumentButton > div {
+  font-family: "Righteous", cursive;
+  height: 100px;
+  width: 100px;
+  flex: 1;
+}
+
+.button_0 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border-radius: 70%;
+  background: #00bd56;
+}
+.button_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border-radius: 70%;
+  background: #f9fd50;
+}
+.button_2 {
+  background: #26baee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border-radius: 70%;
+}
+.button_3 {
+  background: #9fe8fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border-radius: 70%;
+}
+.button_4 {
+  background: #8f71ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border-radius: 70%;
+}
+.button_5 {
+  background: #8bffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border-radius: 70%;
+}
+.button_6 {
+  background: #c7004c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border-radius: 70%;
+}
+.button_7 {
+  background: #ffaaaa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border-radius: 70%;
+}
+.button_8 {
+  background: #55968f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border-radius: 70%;
+}
+.button_9 {
+  background: #8acbbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border-radius: 70%;
+}
+.button_10 {
+  background: #226b80;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border-radius: 70%;
+}
+.button_11 {
+  background: #00fff0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border-radius: 70%;
+}
+.button_12 {
+  background: #3d6cb9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border-radius: 70%;
+}
+.button_13 {
+  background: #4d3664;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border-radius: 70%;
+}
+.button_14 {
+  background: #fa4659;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border-radius: 70%;
+}
+.button_15 {
+  background: #a52b2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  border-radius: 70%;
+}
+
+@keyframes floating {
+  0% {
+    bottom: 50%;
+    right: 10%;
+  }
+  50% {
+    bottom: 50%;
+    right: 50%;
+  }
+  100% {
+    bottom: 50%;
+    right: 90%;
+  }
+}
+
+.visual > div {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 20%;
+  bottom: 0%;
+  z-index: -1;
+}
+
+/* -----wave------------- */
+.weirdShape {
+  width: 1000px;
+  height: 1005px;
+  position: absolute;
+  top: -23%;
+  left: 50%;
+  margin-left: -500px;
+  margin-top: -500px;
+  border-radius: 37%;
+  background: rgba(255, 255, 255, 0.857);
+  animation: weirdShape 20s infinite linear;
+}
+
+@keyframes weirdShape {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}
