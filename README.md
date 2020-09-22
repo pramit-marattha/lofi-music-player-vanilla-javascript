@@ -1,4 +1,4 @@
-## Lofi music player - "chill codding session".
+## Lofi music player - "chill coding session".
 
 #### Simple, yet awesome lofi music player with tons of lofi songs, created using plain vanilla javascript.Chill with the vibe and create your own beats.
 ---
